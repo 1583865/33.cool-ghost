@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阴阳师</title>
+	
+	<style>
+body {
+	background: url("./img/bg.jpg");
+	margin: 0;
+}
+.rolelist {
+	margin: 30px auto;
+	width: 1280px;
+	height: 450px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.lists {
+	display: flex;
+	flex-wrap: wrap;
+	/* 强制换行 */
+	justify-content: space-between;
+	/* 两端对齐 每个子元素之间间距*/ 
+	align-items: center;
+	height: 100%;
+}
+.list-item {
+	width: 420px;
+	height: 210px;
+	/*background-color: red;
+	 background-image: url("./img/p2.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 100% 100%; */
+	  /*背景复用  图片  不重复  位置/大小*/
+	background:  url("./img/p1.png") no-repeat 0px 10px/420px 210px;
+	transition: 0.5s;
+}
+/*第几个list*/
+.list-item:nth-child(2) {
+	background-image: url("./img/p2.png");
+}
+.list-item:nth-child(3) {
+	background-image: url("./img/p3.png");
+}
+.list-item:nth-child(4) {
+	background-image: url("./img/p4.png");
+}
+.list-item:nth-child(5) {
+	background-image: url("./img/p5.png");
+}
+.list-item:nth-child(6) {
+	background-image: url("./img/p6.png");
+}
+
+.list-item:hover {
+	background-position: 0px;
+
+}
+
+svg {
+	width: 420px;
+	height: 210px;
+}
+polyline {
+	 stroke:blue;
+	 /*线段颜色 */
+	stroke-width: 4;
+	fill: none;
+	/*不填充*/
+	stroke-dasharray: 1180px;
+	/*线段总长度*/
+	stroke-dashoffset: 1180px;
+	/*线段未绘制长度*/
+	transition: 0.5s;
+	/*过度时间*/
+}
+/*鼠标悬停到list-item改变polyline*/
+.list-item:hover  polyline{
+	stroke-dashoffset: 0px;
+}
+	
+	</style>
+	<embed src="./赤壁全明星-普通战斗-科幻-小旭音乐-56501654.mp3" hidden="true" autostart="true" loop="loop">
+</head>
+<body>
+	<audio autoplay="autoplay" height="100" width="100" loop="loop" hidden="true">
+		/*注：-1 一首播放完结束   loop  单曲循环*/
+	
+	  <source src="./赤壁全明星-普通战斗-科幻-小旭音乐-56501654.mp3" type="audio/mp3" />
+	
+	</audio> 
+	<div class="rolelist">
+		<ul class="lists">
+			<li class="list-item">
+
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+			<li class="list-item">
+				<svg>
+					<polyline points="10,10 410,10 410,200 10,200 10,10"></polyline>
+				</svg>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
